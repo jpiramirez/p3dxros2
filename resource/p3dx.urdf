@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<robot name="Pioneer 3-DX">
+    <webots>
+        <plugin type="p3dxros2.p3dxnode.P3DXDriver" />
+    </webots>
+</robot>
