@@ -17,6 +17,7 @@ Pioneer3dx {
   controller "<extern>"
   extensionSlot [
     InertialUnit {
+      name "imu"
     }
     GPS {
     }
