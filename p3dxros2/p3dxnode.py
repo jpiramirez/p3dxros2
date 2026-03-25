@@ -14,10 +14,12 @@ class P3DXDriver:
 
         self.__imu = self.__robot.getDevice('imu')
         self.__gps = self.__robot.getDevice('gps')
+        self.__lidar = self.__robot.getDevice('Sick LMS 291')
 
         self.__timestep = int(self.__robot.getBasicTimeStep())
         self.__imu.enable(self.__timestep)
         self.__gps.enable(self.__timestep)
+        self.__lidar.enable(self.__timestep)
 
         self.__left_motor.setPosition(float('inf'))
         self.__left_motor.setVelocity(0)
@@ -55,7 +57,7 @@ class P3DXDriver:
             odom = Odometry()
             odom.header.stamp = self.__node.get_clock().now().to_msg()
             odom.header.frame_id = 'odom'
-            odom.child_frame_id = 'base_link'
+            odom.child_frame_id = 'base_footprint'
 
             odom.pose.pose.position.x = gps_values[0]
             odom.pose.pose.position.y = gps_values[1]

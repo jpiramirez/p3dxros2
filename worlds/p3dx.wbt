@@ -10,13 +10,16 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.33164531560845234 0.20124064185844479 0.9216906144142789 2.121725604067725
-  position 3.470012570467711 -6.9309077946468225 6.587427498912445
+  orientation -0.17378379870354613 0.0905631473514947 0.9806107829561925 2.1967576945706755
+  position 6.420415388291569 -9.240936167386137 4.50485885368353
 }
 Pioneer3dx {
   name "P3DX"
   controller "<extern>"
   extensionSlot [
+    SickLms291 {
+      translation 0 0 0.21
+    }
     InertialUnit {
       name "imu"
     }
