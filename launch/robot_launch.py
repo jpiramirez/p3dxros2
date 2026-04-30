@@ -23,12 +23,12 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='odom_to_base_tf',
-            arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_footprint']
-        ),
+        #Node(
+        #    package='tf2_ros',
+        #    executable='static_transform_publisher',
+        #    name='odom_to_base_tf',
+        #    arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_footprint']
+        #),
         webots,
         my_robot_driver,
         launch.actions.RegisterEventHandler(

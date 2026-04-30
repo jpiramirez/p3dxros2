@@ -6,12 +6,28 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/adept/pioneer3/protos/Pioneer3dx.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/devices/sick/protos/SickLms291.proto"
+EXTERNPROTO "webots://projects/objects/factory/containers/protos/CardboardBox.proto"
 
 WorldInfo {
 }
 Viewpoint {
   orientation -0.17378379870354613 0.0905631473514947 0.9806107829561925 2.1967576945706755
-  position 6.420415388291569 -9.240936167386137 4.50485885368353
+  position 7.8151610236663895 -11.236495649320572 5.395784973740871
+}
+CardboardBox {
+  translation 2.74 -3.15 0.3
+}
+CardboardBox {
+  translation 3.15 1.83 0.3
+  name "cardboard box(1)"
+}
+CardboardBox {
+  translation -2.94 1.83 0.3
+  name "cardboard box(2)"
+}
+CardboardBox {
+  translation -2.94 -0.77 0.3
+  name "cardboard box(3)"
 }
 Pioneer3dx {
   name "P3DX"
